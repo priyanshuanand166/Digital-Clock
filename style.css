@@ -40,9 +40,7 @@ body
 
 .clock span
 {
-    position: relative;
-    top: -13%;
-    margin-left: 5px;
-    font-size: 20px;
+    margin-left: 10px;
+    font-size: 25px;
     font-weight: 700;
 }
