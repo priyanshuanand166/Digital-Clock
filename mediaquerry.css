@@ -15,6 +15,12 @@
         font-size: 15px;
         font-weight: 700;
     }
+
+    body
+    {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 @media screen and (min-width:275px) and (max-width:400px) {
@@ -34,5 +40,11 @@
         margin-left: 10px;
         font-size: 20px;
         font-weight: 700;
+    }
+
+    body
+    {
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
