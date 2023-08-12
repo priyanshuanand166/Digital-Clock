@@ -12,11 +12,16 @@ const showTime = () => {
     let mins = date.getMinutes();
     let secs = date.getSeconds();
 
-    // hr = hr>12 ? hr-12 : hr;
-    hr = hr<10 ? `0${hr}` : hr;
+    let hour = hr % 12;
+    if(hour === 0)
+        hour = 12;
+
+    hour = hour<10 ? `0${hour}` : hour;
     mins = mins<10 ? `0${mins}` : mins;
     secs = secs<10 ? `0${secs}` : secs;
+    
 
-    time.innerHTML = `${hr} : ${mins} : ${secs}`;
-    timeformat.innerHTML = hr>=12 ? "PM" : "AM";
+    timeformat.innerHTML = hr < 12 ? "AM" : "PM";
+
+    time.innerHTML = `${hour} : ${mins} : ${secs}`;
 }
